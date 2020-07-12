@@ -12,7 +12,8 @@
         "react-dev-utils": "^10.2.1",
         "react-dom": "^16.13.1",
         "react-hot-loader": "^4.12.21",
-        "react-scripts": "3.4.1"
+        "react-scripts": "3.4.1",
+        "whatwg-fetch": "^3.2.0"
     },
     "scripts": {
         "start": "react-scripts start",
