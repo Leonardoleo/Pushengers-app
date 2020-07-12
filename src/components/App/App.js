@@ -19,6 +19,8 @@ const business = {
 const businesses = [business, business, business, business, business, business];
 class App extends React.Component {
     render() {
+
+        const searchYelp() = { term, location, sortBy }
         return ( <
             div className = "App" >
             <
@@ -28,6 +30,8 @@ class App extends React.Component {
             BusinessList businesses = { businesses }
             /> < /
             div >
+
+            console.log("Searching Yelp with Pizza", +Brooklyn, +"best_match");
         );
     }
 }

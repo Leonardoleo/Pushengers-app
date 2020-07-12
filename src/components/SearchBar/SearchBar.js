@@ -8,6 +8,10 @@ const sortByOptions = {
 };
 
 class SearchBar extends React.Component {
+
+    this.handleTermChange = this.handleTermChange.bind(this);
+    this.handleLocationChange = this.handleLocationChange.bind(this);
+
     constructor(props) {
         super(props);
         this.state = { term, location, sortBy };
@@ -26,18 +30,35 @@ class SearchBar extends React.Component {
                 return ('');
             }
             return Object.keys(sortByOptions.this).map(sortByOption => {
-                let sortByOptionValue = sortByOptions[sortByOption];
-                return <li key = { sortByOptionValue } > { sortByOption } < /li>;
+                let sortByOptionValue = handleSortByChange.bind(this, sortByOptionValue);
+                return <li onClick = { this.sortByOptionValue } > { sortByOption } < /li>;
             });
         };
     }
 
-    const getSortByClass = sortByOption;
+    .handleSortByChange = sortByOption() {
+        this.setState({ sortBy });
 
+        handleTermChange(event) {
+            { term: event.target.value }
+            this.setState();
+        }
 
+        handleLocationChange(event) {
+            { location: event.target.value }
+            this.setState();
+        }
+
+    };
+
+    const set.getSortByClass = sortByOption;
 
     render() {
-        return ( <
+        return (
+
+            const searchYelp = this.searchYelp;
+
+            <
             div className = "SearchBar" >
             <
             div className = "SearchBar-sort-options" >
@@ -47,9 +68,30 @@ class SearchBar extends React.Component {
             div > <
             div className = "SearchBar-fields" >
             <
-            input placeholder = "Search Businesses" / >
+            input onChange placeholder = "Search Businesses" / >
+
+            handleTermChange(event) {
+                { term: event.target.value }
+                this.setState();
+            }
+
             <
-            input placeholder = "Where?" / >
+            input onChange placeholder = "Where?" / >
+
+            handleLocationChange(event) {
+                { location: event.target.value }
+                this.setState();
+
+                const handleSearch() = {
+                    state.searchYelp(term, location, sortBy);
+                    handleSearch().bind;
+                    event.preventDefault().call; <
+                    onClick = "Let's Go" = {
+                        (this.handleSearch) }
+                    />    
+                }
+            }
+
             <
             /div> <
             div className = "SearchBar-submit" >
