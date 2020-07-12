@@ -1,6 +1,6 @@
-const apiKey = '';
+const apiKey = '3UmazXTl4GJnA7XzTYIjq1bgVlnaEiI4bZiujDcZG18y4YGvj_Cn7kK7bdfvBocqq6iA7VKCjqPAd15k1NQnF6CwQNVThoAytd8AU3hpj1KKTipAHHmWC-xzrO4KX3Yx';
 
-const yelp = {
+const Yelp = {
     searchYelp(term, location, sortBy) {
         return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
             headers: {
@@ -30,4 +30,4 @@ const yelp = {
     }
 };
 
-export default yelp;
+export default Yelp;
