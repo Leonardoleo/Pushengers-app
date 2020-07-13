@@ -5,18 +5,20 @@ import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
 
 import Yelp from '../../util/Yelp';
+
 class App extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
-            businesses: [],
+            businesses: []
         };
 
         this.searchYelp = this.searchYelp.bind(this);
     }
 
     searchYelp(term, location, sortBy) {
-        Yelp.searchYelp(term, location, sortBy).then((businesses) => {
+        Yelp.search(term, location, sortBy).then(businesses => {
             this.setState({ businesses: businesses });
         });
     }
@@ -25,12 +27,12 @@ class App extends React.Component {
         return ( <
             div className = "App" >
             <
-            h1 > Pushengers < /h1>   <
+            h1 > Pushengers < /h1> <
             SearchBar searchYelp = { this.searchYelp }
             /> <
             BusinessList businesses = { this.state.businesses }
-            />   < /
-            div >
+            /> <
+            /div>
         );
     }
 }
