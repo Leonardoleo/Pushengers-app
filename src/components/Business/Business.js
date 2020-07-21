@@ -19,16 +19,16 @@ class Business extends React.Component {
             <
             p > { this.props.business.address } < /p> <
             p > { this.props.business.city } < /p> <
-            p > { `${this.props.business.state} ${this.props.business.zipCode}` } < /p> <
-            /div> <
+            p > { `${this.props.business.state} ${this.props.business.zipCode}` } < /p> < /
+            div > <
             div className = "Business-reviews" >
             <
             h3 > { this.props.business.category.toUpperCase() } < /h3> <
             h3 className = "rating" > { `${this.props.business.rating} stars` } < /h3> <
-            p > { `${this.props.business.reviewCount} reviews` } < /p> <
-            /div> <
-            /div> <
-            /div>
+            p > { `${this.props.business.reviewCount} reviews` } < /p> < /
+            div > <
+            /div> < /
+            div >
         );
     }
 }
