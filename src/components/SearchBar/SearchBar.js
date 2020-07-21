@@ -19,7 +19,8 @@ class SearchBar extends React.Component {
             this.sortByOptions = {
                 'Best Match': 'best_match',
                 'Highest Rated': 'rating',
-                'Most Reviewed': 'review_count'
+                'Most Reviewed': 'review_count',
+                'Distance From': 'distance'
             };
         }
 
@@ -31,7 +32,11 @@ class SearchBar extends React.Component {
         }
 
         handleSortByChange(sortByOption) {
-            this.setState({ sortBy: sortByOption });
+            this.setState({
+                sortBy: sortByOption
+            }, () => {
+                this.props.searchYelp(this.state.term, this.state.location, this.location.sortBy);
+            });
         }
 
         handleTermChange(event) {
@@ -46,6 +51,12 @@ class SearchBar extends React.Component {
             this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
 
             event.preventDefault();
+        }
+
+        handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
+            }
         }
 
         renderSortByOptions() {
@@ -71,9 +82,11 @@ class SearchBar extends React.Component {
                     <
                     input placeholder = "Search Businesses"
                     onChange = { this.handleTermChange }
+                    onKeyPress = { this.handleKeyPress }
                     /> <
                     input placeholder = "Where?"
                     onChange = { this.handleLocationChange }
+                    onKeyPress = { this.handleKeyPress }
                     /> < /
                     div > <
                     div className = "SearchBar-submit" >
