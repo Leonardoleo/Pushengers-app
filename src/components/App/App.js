@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 
+// Components
 import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
-
 import Yelp from '../../util/Yelp';
 
 class App extends React.Component {
@@ -31,8 +31,8 @@ class App extends React.Component {
             SearchBar searchYelp = { this.searchYelp }
             /> <
             BusinessList businesses = { this.state.businesses }
-            /> <
-            /div>
+            /> < /
+            div >
         );
     }
 }
