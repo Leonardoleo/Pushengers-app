@@ -1,5 +1,6 @@
 import React from 'react';
 import './BusinessList.css';
+import PropTypes from "prop-types";
 
 import Business from '../Business/Business';
 
@@ -17,5 +18,9 @@ class BusinessList extends React.Component {
         );
     }
 }
+
+BusinessList.propTypes = {
+    businessList: PropTypes.array.isRequired
+};
 
 export default BusinessList;
