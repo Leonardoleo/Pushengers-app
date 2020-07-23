@@ -23,8 +23,6 @@ New Features :):
 
 -Make images clickable and have them open the business’ website in a new tab
 
--Make "Let's Go" button click so at least user can click at "Let's Go" button rather than pressing "Enter" (or "Return") on user keyboard
-
 -create handle 400 errors search errors (add Search Error folder)
 
 *Will fix HTML & CSS (Design) :)
