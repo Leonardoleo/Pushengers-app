@@ -2,6 +2,8 @@ My app link:https://6a9d9146-d856-4dc8-8d78-d1fceb5053e5.jexia.app/
 
 For the moment,pushengers app will be using subdomain. Subdomain using Jexia. https://www.jexia.com/en/
 
+My app will use netlify domain.
+
 *Add on new features soon. Stay Tuned!
 
 New Features:
