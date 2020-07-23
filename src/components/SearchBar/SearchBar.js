@@ -136,7 +136,7 @@ class SearchBar extends React.Component {
             div className = "SearchBar-sort-options" >
             <
             ul > { this.renderSortByOptions() } <
-            /ul>    < /
+            /ul>     < /
             div >
 
             <
@@ -145,21 +145,19 @@ class SearchBar extends React.Component {
             <
             input onKeyPress = { this.handleKeyPress }
             onChange = { this.handleTermChange }
-            placeholder = "Search Businesses" /
-            >
+            placeholder = "Search Businesses" / >
 
             <
             input onKeyPress = { this.handleKeyPress }
             onChange = { this.handleLocationChange }
-            placeholder = "Where?" /
-            >
+            placeholder = "Where?" / >
 
             <
-            /div>    <
+            /div>     <
             div className = "SearchBar-submit"
             onClick = { this.handleSearch } >
             <
-            button > Let & apos 's Go < /button>  < /
+            button > Let 's Go! < /button>   < /
             div > <
             /div>
         );

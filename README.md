@@ -2,11 +2,16 @@ My app link:https://6a9d9146-d856-4dc8-8d78-d1fceb5053e5.jexia.app/
 
 For the moment,pushengers app will be using subdomain. Subdomain using Jexia. https://www.jexia.com/en/
 
-My app will use netlify domain.
+My app will use Netlify domain and Jexia hosting.
 
-*Add on new features soon. Stay Tuned!
+R&D 
 
-New Features:
+
+
+
+Add on new features soon. Stay Tuned!
+
+New Features :):
 
 -Allow you to search by pressing “Enter” (or “Return”) on your keyboard, as opposed to manually clicking
 
@@ -18,7 +23,9 @@ New Features:
 
 -Make images clickable and have them open the business’ website in a new tab
 
+-Make "Let's Go" button click so at least user can click at "Let's Go" button rather than pressing "Enter" (or "Return") on user keyboard
 
+*Will fix HTML & CSS (Design) :)
 
 
 Search Restaurant App. Using Yelp API to call Restaurants that u r searching for. U can test my app here:
