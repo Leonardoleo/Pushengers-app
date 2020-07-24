@@ -6,7 +6,7 @@ My app will use Netlify domain and Jexia hosting.
 
 R&D 
 
-
+I'm doing my own resume/portfolio. Working on it right now. Link: https://leonardoleo.github.io/
 
 
 Add on new features soon. Stay Tuned!
