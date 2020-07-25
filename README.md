@@ -1,3 +1,6 @@
+Since there's already app name and also there's already organization name,i will transter this git repo to https://github.com/LeoNetwork. It's because easier to work with rather than so much of headache! And,Pushengers Organization might do all the things. Such as update and upgrade,add new features,docs,commmit,push,PR, and so on....... Hope u guys understand and now this repo is just Archive. Read Only!
+
+
 My app link:https://6a9d9146-d856-4dc8-8d78-d1fceb5053e5.jexia.app/
 
 For the moment,pushengers app will be using subdomain. Subdomain using Jexia. https://www.jexia.com/en/
